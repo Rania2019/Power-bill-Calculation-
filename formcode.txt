@@ -1,0 +1,6 @@
+string totalpaycurrency;
+            decimal usedkwh = decimal.Parse(entered_kwh.Text);
+            decimal totalpay = ((usedkwh * 0.052m) + 6m);
+            totalpaycurrency = totalpay.ToString("C");
+            result.Text = "The bill amount is: " +  totalpaycurrency;
+            result.Visible = true;
